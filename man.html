@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- scroll reveal js -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <title>Category-Men</title>
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <!-- css -->
+        <link rel="stylesheet" href="./styles.css">
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./images/favicon/site.webmanifest">
+    </head>
+    <body>
+        <!-- nav bar -->
+        <header>
+            <nav class="navigation">
+                <span id="logo">
+                    <a href="#"><img src="./images/favicon/favicon.ico" alt="logo"></a>
+                </span>
+                <ul class="nav_list">
+                    <li>
+                        <a href="index.html" class="language-content en-content">Home</a>
+                        <a href="index.html" class="language-content fr-content">Accueil</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="drop_btn language-content en-content">Products</a>
+                        <a href="#" class="drop_btn language-content fr-content">Produits</a>
+                        <div class="product_content">
+                            <span class="language-content en-content">
+                                <a href="./woman.html" >Women</a>
+                                <a href="#" >Men</a>
+                                <a href="./accessory.html" >Accessories</a>
+                            </span>
+                            <span class="language-content fr-content">
+                                <a href="./woman.html" >Femmes</a>
+                                <a href="#" >Hommes</a>
+                                <a href="./accessory.html" >Accessoires</a>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="language-content en-content">Contact</a>
+                        <a href="#" class="language-content fr-content">Contact</a>
+                    </li>  
+                </ul>
+                <span>
+                    <!-- Language Switcher -->
+                    <div class="language-switcher">
+                        <img src="./images/design/language_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="Language Switcher" class="world-icon" onclick="toggleDropdown()">
+                        <div id="language-dropdown" class="dropdown_content">
+                            <a href="#" onclick="changeLanguage('en')">English</a>
+                            <a href="#" onclick="changeLanguage('fr')">French</a>
+                        </div>
+                    </div>
+                    <img src="./images/design/person_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="person" class="person">
+                    <img src="./images/design/favorite_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="heart" class="heart">
+                    <a href="index.html">
+                        <img src="./images/design/shopping_cart_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="cart" class="cart">
+                    </a>
+                </span> 
+                <span>
+                    <img src="./images/design/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="menu" class="hamburger">
+                </span>
+             </nav>
+         </header>
+         <!-- nav bar mobile and tablet -->
+         <nav class="mobile_nav mobile_nav_hide">
+            <ul class="mobile_list">
+                <li class="mobile_item"><a href="./essai.html" class="mobile_link language-content en-content">Home</a></li>
+                <li class="mobile_item"><a href="./essai.html" class="mobile_link language-content fr-content">Accueil</a></li>
+                <div class="dropdown dropstart">
+                    <li class="mobile_item"><a href="#" class="mobile_link language-content en-content">Products</a></li>
+                    <li class="mobile_item"><a href="#" class="mobile_link language-content fr-content">Produits</a></li>
+                    <div class="product_content ">
+                        <span class="language-content en-content">
+                            <a href="./woman.html" >Women</a>
+                            <a href="#" >Men</a>
+                            <a href="./accessory.html" >Accessories</a>
+                        </span>
+                        <span class="language-content fr-content">
+                            <a href="./woman.html" >Femmes</a>
+                            <a href="#" >Hommes</a>
+                            <a href="./accessory.html" >Accessoires</a>
+                        </span>
+                    </div>
+                </div>
+                <li class="mobile_item"><a href="#" class="mobile_link language-content en-content">Contact</a></li>
+                <li class="mobile_item"><a href="#" class="mobile_link language-content fr-content">Contact</a></li>
+            </ul>
+         </nav>
+
+         <!-- first part containing background img  -->
+         <div class="background">
+            <img src="./images/design/Man.jpg" class="backimg" alt="back">
+          </div>
+
+        <!-- shirts category -->
+        <section class="section">
+            <div class="container">
+                <div >
+                    <h3 class="section_title language-content en-content">Shirts</h3>
+                    <h3 class="section_title language-content fr-content">Collection de Hauts</h3>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper" id="shirt_list" >
+                        <!-- Products will be dynamically inserted here via JavaScript -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>  
+            </div>
+        </section>
+
+        <!-- pants category -->
+        <section class="section">
+            <div class="container">
+                <div >
+                    <h3 class="section_title language-content en-content">Pants & Shorts</h3>
+                    <h3 class="section_title language-content fr-content">Pantalons & Shorts</h3>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper" id="short_list" >
+                        <!-- Products will be dynamically inserted here via JavaScript -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>  
+            </div>
+        </section>
+
+         <!-- outerwear category -->
+         <section class="section">
+            <div class="container">
+                <div >
+                    <h3 class="section_title language-content en-content">OuterWear</h3>
+                    <h3 class="section_title language-content fr-content">Vêtements d'Extérieur</h3>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper" id="out_list" >
+                        <!-- Products will be dynamically inserted here via JavaScript -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>  
+            </div>
+        </section>
+
+        <!-- shoes category -->
+        <section class="section">
+            <div class="container">
+                <div >
+                    <h3 class="section_title language-content en-content">Shoes</h3>
+                    <h3 class="section_title language-content fr-content">Chaussures</h3>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper" id="shoes_list" >
+                        <!-- Products will be dynamically inserted here via JavaScript -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>  
+            </div>
+        </section>
+
+
+
+
+
+        
+
+         <!-- footer -->
+         <footer class="footer">
+            <div class="container_footer">
+                <div class="footer_item">
+                    <a href="#" class="footer_logo">
+                        <img src="./images/favicon/favicon.ico" alt="logo">
+                    </a>    
+                </div>
+                <div class="footer_item">
+                    <h3 class="footer_title language-content en-content">Contact</h3>
+                    <h3 class="footer_title language-content fr-content">Contact</h3>
+                    <ul class="footer_list">
+                        <li class="list_item language-content en-content">Tunis, Tunisia</li>
+                        <li class="list_item language-content fr-content">Tunis, Tunisie</li>
+                        <li class="list_item">sarraharbi2023@gmail.com</li>
+                        <li class="list_item">+216 22 302 541</li>
+                        <li class="list_item">+216 51 553 861</li>
+                    </ul>
+                </div>
+                <div class="footer_item">
+                    <h3 class="footer_title language-content en-content">Corporate</h3>
+                    <h3 class="footer_title language-content fr-content">Corporatif</h3>
+                    <ul class="footer_list">
+                        <li class="list_item language-content en-content">Shipping & Returns</li>
+                        <li class="list_item language-content fr-content">Livraison & Retours</li>
+                        <li class="list_item language-content en-content">About Us</li>
+                        <li class="list_item language-content fr-content">À propos de nous</li>
+                        <li class="list_item language-content en-content">Gift Card</li>
+                        <li class="list_item language-content fr-content">Carte Cadeau</li>
+                        <li class="list_item language-content en-content">Data Preferences</li>
+                        <li class="list_item language-content fr-content">Préférences de données</li>
+                    </ul>
+                </div>
+                <div class="footer_item">
+                    <h3 class="footer_title language-content en-content">Support</h3>
+                    <h3 class="footer_title language-content fr-content">Assistance</h3>
+                    <ul class="footer_list">
+                        <li class="list_item language-content en-content">FAQ</li>
+                        <li class="list_item language-content fr-content">FAQ</li>
+                        <li class="list_item language-content en-content">Privacy Policy</li>
+                        <li class="list_item language-content fr-content">Politique de Confidentialité</li>
+                        <li class="list_item language-content en-content">Submit a Return</li>
+                        <li class="list_item language-content fr-content">Soumettre un Retour</li>
+                    </ul>
+                </div>
+            </div>
+         </footer>
+
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- js -->
+        <script src="./scriptM.js"></script>  
+    </body>
+</html>
